@@ -1,0 +1,22 @@
+<a 
+style="cursor: pointer;"
+[routerLink]="[index]">
+<div class="row">
+        <div class="col-xs-4">
+            <div class="list-group-item clearfix">
+                    <span class="pull-left">
+                            <img 
+                            [src]="item.image"
+                             alt="{{item.name}}"
+                            class="img-responsive"
+                            style="max-height: 200px;">
+                        </span>
+                        <div class="pull-left">
+                            <h4 class="list-group-item-heading">{{item.name}}</h4>
+                            <p class="list-group-item-text">{{item.desc}}</p>
+                            <p class="list-group-item-text">Rs.{{item.price}}</p>
+                        </div>
+            </div>
+        </div>
+    </div>
+</a>

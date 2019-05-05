@@ -1,0 +1,29 @@
+<a 
+style="cursor: pointer;"
+[routerLink]="[index]">
+  <div class="row">
+            <div class="list-group-item clearfix">
+                <div class="col-xs-3">
+                    <span class="pull-left">
+                        <img [src]="item.image"
+                         alt="{{item.name}}"
+                        class="img-responsive"
+                        style="max-height: 200px;">
+                    </span>
+                </div>
+                <div class="col-xs-3">
+                    <div class="pull-left">
+                        <h4 class="list-group-item-heading">{{item.name}}</h4>
+                        <p class="list-group-item-text">{{item.desc}}</p>
+                        <p class="list-group-item-text">Rs.{{item.price}}</p>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                  <button class="btn btn-danger">Remove</button>
+                  <button class="btn btn-success">-</button>
+                  <input type="text" value="1" >
+                  <button class="btn btn-success">+</button>
+                </div>
+            </div> 
+    </div>
+</a>
